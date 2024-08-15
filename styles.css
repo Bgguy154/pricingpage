@@ -1,0 +1,167 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+}
+
+/* Light mode styles */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode h1 {
+    color: #4f46e5;
+}
+
+body.light-mode h3 {
+    color: #4b5563;
+}
+
+body.light-mode #table-container {
+    background-color: #f3f4f6;
+}
+
+body.light-mode thead {
+    background-color: #4f46e5;
+    color: #ffffff;
+}
+
+body.light-mode tbody tr:nth-child(even) {
+    background-color: #e5e7eb;
+    color: #000000;
+}
+
+body.light-mode tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+    color: #000000;
+}
+
+/* Toggle switch styles */
+#mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4f46e5;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+h1{
+    color:#a5b4fc;
+}
+
+h3{
+    color:#e2e8f0;
+}
+
+#hd{
+    margin-top:-px;
+    margin-left:480px;
+}
+
+#hdf{
+    margin-top:20px;
+    margin-left:400px;
+}
+
+#hda{
+    margin-left:400px;
+    margin-top:40px;
+}
+
+#table-container {
+    margin-top:50px;
+    margin-left: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: full;
+    background-color: #1e293b;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+
+thead {
+    background-color: #6366f1;
+    color: #ffffff;
+}
+/* #6366f1
+#343a40 */
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #1e293b;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color:#1e293b ;
+    color: #ffffff;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    th, td {
+        padding: 10px;
+    }
+}
